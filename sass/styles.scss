@@ -1,3 +1,7 @@
 @import "bootstrap-compass";
 @import "bootstrap-variables";
 @import "bootstrap";
+
+.jumbotron h1 {
+  color: $brand-primary;
+}
