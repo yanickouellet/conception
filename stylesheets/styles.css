@@ -8157,3 +8157,8 @@ button.close {
 .jumbotron h1 {
   color: #f5792f;
 }
+
+/* line 9, ../sass/styles.scss */
+.input-group {
+  margin: 10px 0;
+}

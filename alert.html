@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faire face</title>
+
+  <link href="stylesheets/styles.css" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Afficher la navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Faire face</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right" role="form">
+          <div class="form-group">
+            <input type="text" placeholder="Email" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Mot de passe" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Connexion</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron"></div>
+
+  <div class="container">
+    <div class="row">
+      <h1>Partager un sinistre</h1>
+      <div>
+        <form>
+          <div class="input-group">
+            <label for="event-name" class="input-group-addon">Titre du sinistre</label>
+            <input type="text" id="event-name" class="form-control" />
+          </div>
+          <div class="input-group">
+            <label for="event-description" class="input-group-addon">Description</label>
+            <input type="text" id="event-description" class="form-control" />
+          </div>
+          <div class="input-group">
+            <label for="event-category" class="input-group-addon">Type de catastrophe</label>
+            <select id="event-category" class="form-control">
+              <option>Catastrophe naturelle</option>
+              <option>Incident humain</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="event-media" class="input-group-addon">Joindre un média (image, vidéo, fichier audio)</label>
+            <input type="file" id="event-media" class="form-control" />
+          </div>
+          <div class="input-group">
+            <label for="event-geoloc" class="input-group-addon">Joindre mon emplacement (Prérempli avec votre géo-localisation)</label>
+            <input type="text" id="event-geoloc" class="form-control" value="807 avenue madelaine de verchères, Québec" />
+          </div>
+          <div class="input-group">
+          <label for="event-email" class="input-group-addon">Email pour reçevoir un suivi sur le sinistre</label>
+            <input type="text" id="event-email" class="form-control" />
+          </div>
+          <div class="input-group">
+            <input type="submit" class="form-control" value="Soumettre" />
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <p>&copy; Ville de Québec 2014</p>
+      </footer>
+    </div>
+  </div> <!-- /container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="javascripts/bootstrap.js"></script>
+</body>
+</html>
