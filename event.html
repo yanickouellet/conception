@@ -38,52 +38,36 @@
 
   <div class="container">
     <div class="row">
-      <h1>Créer une alerte</h1>
+      <h1>Partager un sinistre</h1>
       <div>
         <form>
           <div class="input-group">
-            <label for="alert-name" class="input-group-addon">Titre de l'alerte</label>
-            <input type="text" id="alert-name" class="form-control" />
+            <label for="event-name" class="input-group-addon">Titre du sinistre</label>
+            <input type="text" id="event-name" class="form-control" />
           </div>
           <div class="input-group">
-            <label for="alert-description" class="input-group-addon">Description</label>
-            <input type="text" id="alert-description" class="form-control" />
+            <label for="event-description" class="input-group-addon">Description</label>
+            <input type="text" id="event-description" class="form-control" />
           </div>
           <div class="input-group">
-            <label for="alert-event" class="input-group-addon">Événement lié à l'alerte</label>
-            <select id="alert-event" class="form-control">
-              <option>Portail dimmensionnel dans les plaines</option>
-              <option>Dragon écrasé sur l'hôtel de ville</option>
+            <label for="event-category" class="input-group-addon">Type de catastrophe</label>
+            <select id="event-category" class="form-control">
+              <option>Catastrophe naturelle</option>
+              <option>Incident humain</option>
             </select>
           </div>
           <div class="input-group">
-            <label for="alert-media" class="input-group-addon">Joindre un média (image, vidéo, fichier audio)</label>
-            <input type="file" id="alert-media" class="form-control" />
-          </div>
-          <div class="checkbox">
-            <p>Arrondissements visés par l'alerte</p>
-            <label>
-              <input type="checkbox" id="chk-beauport" />
-              Beauport
-            </label>
-            <label>
-              <input type="checkbox" id="chk-stefoy" />
-              Ste-foy
-            </label>
-            <label>
-              <input type="checkbox" id="chk-limoilou" />
-              Limoilou
-            </label>
-            <label>
-              <input type="checkbox" id="chk-rivieres" />
-              Rivières
-            </label>
-            <label>
-              <input type="checkbox" id="chk-haute-stcharles" />
-              Haute St-Charles
-            </label>
+            <label for="event-media" class="input-group-addon">Joindre un média (image, vidéo, fichier audio)</label>
+            <input type="file" id="event-media" class="form-control" />
           </div>
           <div class="input-group">
+            <label for="event-geoloc" class="input-group-addon">Joindre mon emplacement (Prérempli avec votre géo-localisation)</label>
+            <input type="text" id="event-geoloc" class="form-control" value="807 avenue madelaine de verchères, Québec" />
+          </div>
+          <div class="input-group">
+          <label for="event-email" class="input-group-addon">Email pour reçevoir un suivi sur le sinistre</label>
+            <input type="text" id="event-email" class="form-control" />
+          </div>
           <div class="input-group">
             <input type="submit" class="form-control" value="Soumettre" />
           </div>

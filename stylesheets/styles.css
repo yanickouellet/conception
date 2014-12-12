@@ -8162,3 +8162,8 @@ button.close {
 .input-group {
   margin: 10px 0;
 }
+
+/* line 13, ../sass/styles.scss */
+.container {
+  max-width: 95%;
+}
